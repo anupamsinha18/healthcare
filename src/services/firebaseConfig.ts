@@ -3,14 +3,14 @@ import { getAuth } from 'firebase/auth';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCYiFAM5w6096HHaRtvWKjUIzM50C4u1kk",
-  authDomain: "remarkform-3d065.firebaseapp.com",
-  databaseURL: "https://remarkform-3d065-default-rtdb.firebaseio.com",
-  projectId: "remarkform-3d065",
-  storageBucket: "remarkform-3d065.firebasestorage.app",
-  messagingSenderId: "782468369081",
-  appId: "1:782468369081:web:cc5f3ce8d5895f93186968",
-  measurementId: "G-PNSLZ1SRP8"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
