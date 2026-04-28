@@ -1,0 +1,55 @@
+.container {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.chartGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.chartCard {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.chartTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.barContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.bar {
+  width: 100%;
+  max-width: 40px;
+  background-color: var(--accent-primary);
+  border-radius: 4px 4px 0 0;
+  transition: height 1s ease-out;
+}
+
+.barLabel {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
